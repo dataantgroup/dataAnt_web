@@ -1,127 +1,139 @@
-import { useRef } from 'react';
-
 import Box from '@mui/material/Box';
+import Fab from '@mui/material/Fab';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
+import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Unstable_Grid2';
+import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import { alpha, useTheme } from '@mui/material/styles';
 
-import { paths } from 'src/routes/paths';
-
+import { useBoolean } from 'src/hooks/use-boolean';
 import { useResponsive } from 'src/hooks/use-responsive';
-import { useBoundingClientRect } from 'src/hooks/use-bounding-client-rect';
 
+import { fShortenNumber } from 'src/utils/format-number';
+
+import { _mock } from 'src/_mock';
 import { bgGradient } from 'src/theme/css';
-import { HEADER } from 'src/layouts/config-layout';
+import ElearningHeroIllustration from 'src/sections/_home/view/my-hero-illustration';
 
-import Image from 'src/components/image';
 import Iconify from 'src/components/iconify';
+import { PlayerDialog } from 'src/components/player';
 
 // ----------------------------------------------------------------------
 
-export default function HomeHero() {
-  const theme = useTheme();
+const SUMMARY = [
+  { value: 14000, label: 'Learners', color: 'warning' },
+  { value: 1050, label: 'Courses', color: 'error' },
+  { value: 59000, label: 'Graduates', color: 'success' },
+];
 
-  const containerRef = useRef(null);
+// ----------------------------------------------------------------------
+
+export default function ElearningLandingHero() {
+  const theme = useTheme();
 
   const mdUp = useResponsive('up', 'md');
 
-  const container = useBoundingClientRect(containerRef);
-
-  const offsetLeft = container?.left;
+  const videoOpen = useBoolean();
 
   return (
-    <Box
-      sx={{
-        ...bgGradient({
-          color: alpha(theme.palette.background.default, 0.9),
-          imgUrl: '/assets/background/overlay_1.jpg',
-        }),
-        overflow: 'hidden',
-        position: 'relative',
-        height: { md: `calc(100vh - ${HEADER.H_DESKTOP}px)` },
-      }}
-    >
-      <Container sx={{ height: 1 }}>
-        <Grid container columnSpacing={3} alignItems="center" sx={{ height: 1 }}>
-          <Grid xs={12} md={5}>
-            <Stack
-              spacing={5}
-              justifyContent="center"
-              alignItems={{ xs: 'center', md: 'flex-start' }}
-              sx={{
-                py: 15,
-                textAlign: { xs: 'center', md: 'left' },
-              }}
-            >
-              <Typography variant="h1">
-                Start Learning <br /> AI Today with
-                <Box component="span" sx={{ color: 'primary.main' }}>
-                  {` DataAnt`}
-                </Box>
-              </Typography>
-
-              <Typography sx={{ color: 'text.secondary' }}>
-              DataAnt is an AI BootCamp school offering comprehensive, hands-on AI courses designed to equip you with the skills to excel in the field of artificial intelligence.
-              </Typography>
-
-              {/* <Button
-                color="inherit"
-                size="large"
-                variant="contained"
-                endIcon={<Iconify icon="carbon:launch" />}
-                target="_blank"
-                rel="noopener"
-                href={paths.figmaPreview}
+    <>
+      <Box
+        sx={{
+          ...bgGradient({
+            color: alpha(theme.palette.background.default, 0.9),
+            imgUrl: '/assets/background/overlay_1.jpg',
+          }),
+          overflow: 'hidden',
+        }}
+      >
+        <Container
+          sx={{
+            py: 15,
+            display: { md: 'flex' },
+            alignItems: { md: 'center' },
+            height: { md: `100vh` },
+          }}
+        >
+          <Grid container spacing={3}>
+            <Grid xs={12} md={6} lg={5}>
+              <Stack
+                sx={{
+                  textAlign: { xs: 'center', md: 'unset' },
+                }}
               >
-                figma workspace
-              </Button> */}
-
-              <Stack spacing={3}>
-                <Typography variant="overline" sx={{ opacity: 0.48 }}>
-                  AVAILABLE FOR
+                <Typography variant="h1">
+                  Empower
+                  <Box component="span" sx={{ color: 'text.disabled' }}>
+                    {` Your `}
+                  </Box>
+                  <Box component="span" sx={{ color: 'primary.main', textDecoration: 'underline' }}>
+                    {` Future`}
+                  </Box>
+                   {' '} with AI Mastery
                 </Typography>
-                <Stack direction="row" spacing={2.5}>
-                  {['js', 'ts', 'figma', 'nextjs', 'vite'].map((icon) => (
-                    <Box
-                      key={icon}
-                      component="img"
-                      alt={icon}
-                      src={`/assets/icons/platforms/ic_${icon}.svg`}
-                      sx={{ width: 24, height: 24 }}
-                    />
+
+                <Typography sx={{ color: 'text.secondary', mt: 3, mb: 5 }}>
+                DataAnt is an AI BootCamp school offering comprehensive, hands-on AI courses 
+                designed to equip you with 
+                the skills to excel in the field of artificial intelligence.
+                </Typography>
+
+                <Stack spacing={3} alignItems="center" direction={{ xs: 'column', md: 'row' }}>
+                  <Button color="inherit" size="large" variant="contained">
+                    Ready Start
+                  </Button>
+
+                  {/* <Stack direction="row" alignItems="center" sx={{ typography: 'h6' }}>
+                    <Fab size="medium" color="info" onClick={videoOpen.onTrue} sx={{ mr: 1 }}>
+                      <Iconify width={24} icon="carbon:play" />
+                    </Fab>
+                    Watch Video
+                  </Stack> */}
+                </Stack>
+
+                <Divider sx={{ borderStyle: 'dashed', mt: 8, mb: 6 }} />
+
+                <Stack
+                  direction="row"
+                  spacing={{ xs: 3, sm: 10 }}
+                  justifyContent={{ xs: 'center', md: 'unset' }}
+                >
+                  {SUMMARY.map((item) => (
+                    <Stack key={item.value} spacing={0.5} sx={{ position: 'relative' }}>
+                      <Box
+                        sx={{
+                          top: 8,
+                          left: -4,
+                          width: 24,
+                          height: 24,
+                          opacity: 0.24,
+                          borderRadius: '50%',
+                          position: 'absolute',
+                          bgcolor: `${item.color}.main`,
+                        }}
+                      />
+                      <Typography variant="h3">{fShortenNumber(item.value)}+</Typography>
+                      <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                        {item.label}
+                      </Typography>
+                    </Stack>
                   ))}
                 </Stack>
               </Stack>
-            </Stack>
-          </Grid>
+            </Grid>
 
-          <Grid xs={12} md={7}>
-            <Box ref={containerRef} />
+            {mdUp && (
+              <Grid xs={12} md={6} lg={7}>
+                <ElearningHeroIllustration />
+              </Grid>
+            )}
           </Grid>
-        </Grid>
-      </Container>
+        </Container>
+      </Box>
 
-      {mdUp && (
-        <Box
-          sx={{
-            maxWidth: 1280,
-            position: 'absolute',
-            bottom: { md: '20%', lg: 40 },
-            right: { md: -110, xl: 0 },
-            width: { md: `calc(100% - ${offsetLeft}px)` },
-          }}
-        >
-          <Image
-            visibleByDefault
-            disabledEffect
-            alt="home hero"
-            src="/assets/images/home/home_hero.png"
-          />
-        </Box>
-      )}
-    </Box>
+      <PlayerDialog open={videoOpen.value} onClose={videoOpen.onFalse} videoPath={_mock.video(0)} />
+    </>
   );
 }

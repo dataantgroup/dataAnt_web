@@ -39,8 +39,8 @@ export default function ElearningContactInfo() {
                 <Iconify icon="carbon:email" width={24} sx={{ mr: 1 }} /> Email
               </Stack>
 
-              <Link color="inherit" variant="body2" href="mailto:hello@example.com">
-                hello@example.com
+              <Link color="inherit" variant="body2" href="mailto:plau312465@gmail.com">
+                plau312465@gmail.com
               </Link>
             </Stack>
 
@@ -49,7 +49,7 @@ export default function ElearningContactInfo() {
                 <Iconify icon="carbon:mobile" width={24} sx={{ mr: 1 }} /> Phone
               </Stack>
 
-              <Typography variant="body2">(907) 555-0101</Typography>
+              <Typography variant="body2">(852) 6747-3938</Typography>
             </Stack>
 
             <Stack spacing={1}>
@@ -58,7 +58,7 @@ export default function ElearningContactInfo() {
               </Stack>
 
               <Typography variant="body2">
-                3891 Ranchview Dr. Richardson, California 62639
+                Suite 2104, 248 Des Voeus Road, Central, Hong Kong
               </Typography>
             </Stack>
 
@@ -77,9 +77,9 @@ export default function ElearningContactInfo() {
           </Stack>
         </Grid>
 
-        <Grid xs={12} md={6} lg={7}>
+        {/* <Grid xs={12} md={6} lg={7}>
           <ContactMap offices={_offices} sx={{ borderRadius: 2 }} />
-        </Grid>
+        </Grid> */}
       </Grid>
     </Container>
   );

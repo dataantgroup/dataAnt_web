@@ -41,7 +41,7 @@ export default function ElearningCourseDetailsLessonList({ lessons }) {
 
   return (
     <div>
-      <Typography variant="h4" sx={{ mb: 3 }}>
+      {/* <Typography variant="h4" sx={{ mb: 3 }}>
         Lessons
       </Typography>
 
@@ -56,7 +56,7 @@ export default function ElearningCourseDetailsLessonList({ lessons }) {
             handleSelectedLesson(lesson);
           }}
         />
-      ))}
+      ))} */}
 
       <ElearningCourseDetailsLessonsDialog
         lessons={lessons}

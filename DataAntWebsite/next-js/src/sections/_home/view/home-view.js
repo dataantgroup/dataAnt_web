@@ -8,6 +8,7 @@ import ScrollProgress from 'src/components/scroll-progress';
 
 import HomeHero from '../home-hero';
 import HomeFAQs from '../home-faqs';
+
 import HomeNewStart from '../home-new-start';
 import HomeCombination from '../home-combination';
 import HomeForDesigner from '../home-for-designer';
@@ -31,7 +32,7 @@ export default function HomeView() {
 
       {/* <HomeFlexibleComponents /> */}
 
-      <HomeFeatureHighlights />
+      {/* <HomeFeatureHighlights /> */}
 
       {/* <HomeForDesigner /> */}
 
@@ -39,7 +40,7 @@ export default function HomeView() {
 
       <HomeFAQs />
 
-      <HomeCombination />
+      {/* <HomeCombination /> */}
 
       {/* <HomeAdvertisement /> */}
     </>

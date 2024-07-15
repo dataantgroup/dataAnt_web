@@ -3,7 +3,7 @@ import ElearningLandingView from 'src/sections/_elearning/view/elearning-landing
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'E-learning: Home',
+  title: 'e-learning: Home',
 };
 
 export default function ElearningLandingPage() {

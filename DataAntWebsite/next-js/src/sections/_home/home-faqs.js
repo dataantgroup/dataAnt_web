@@ -22,28 +22,28 @@ import { varFade, MotionViewport } from 'src/components/animate';
 
 const CONTENTS = [
   {
-    question: `What's in the product packages?`,
-    answer: `Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in,`,
+    question: `Will I receive a certificate upon completion of the course?`,
+    answer: `For a complete transformative learning experience, a 100% attendance rate for all classes is expected. Upon doing so, you will be eligible to obtain a certificate for your CV and LinkedIn profile.`,
   },
   {
-    question: 'How can I upgrade my product plan?',
-    answer: `Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in,`,
+    question: 'What are the key benefits of enrolling in our programmes?',
+    answer: `The program offers hands-on learning, the opportunity to learn from industry experts in class, and collaboration with design leaders.`,
   },
   {
-    question: 'Are design assets (Figma, Sketch, Adobe XD) included?',
-    answer: `Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in,`,
+    question: 'What does the course fee cover?',
+    answer: `The course fee includes all class materials, as well as guidance and support from experienced instructors and mentors throughout the course.`,
   },
   {
-    question: 'Does this product support TypeScript?',
-    answer: `Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in,`,
+    question: 'Can the courses be taken online or offline?',
+    answer: `We offer offline classes only as we emphasize the importance of in-person interactions.`,
   },
+  // {
+  //   question: 'What if I have further questions?',
+  //   answer: `We encourage you to attend our demo session to get a taste of the course. Alternatively, you can also contact us on WhatsApp if you have any questions.`,
+  // },
   {
-    question: 'Can I use this template in commercial projects like a SaaS?',
-    answer: `Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in,`,
-  },
-  {
-    question: 'How can I request support?',
-    answer: `Curabitur nisi. Phasellus blandit leo ut odio. Donec posuere vulputate arcu. Donec mi odio, faucibus at, scelerisque quis, convallis in,`,
+    question: 'Are there any financing options available?',
+    answer: `Ensuring education is accessible to individuals is our priority. We provide various payment options to assist you. Feel free to reach out to our course advisors for detailed information.`,
   },
 ];
 

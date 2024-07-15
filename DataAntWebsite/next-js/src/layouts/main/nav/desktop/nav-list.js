@@ -81,7 +81,7 @@ export default function NavList({ data }) {
               }}
             >
               <Grid container columns={15}>
-                <Grid xs={12}>
+                <Grid xs={15}>
                   <Box
                     gap={5}
                     display="grid"
@@ -105,13 +105,13 @@ export default function NavList({ data }) {
                   </Box>
                 </Grid>
 
-                {commonList && (
+                {/* {commonList && (
                   <Grid xs={3}>
                     <Box sx={{ bgcolor: 'background.default', p: 5 }}>
                       <NavSubList subheader={commonList.subheader} items={commonList.items} />
                     </Box>
                   </Grid>
-                )}
+                )} */}
               </Grid>
             </Paper>
           </Fade>

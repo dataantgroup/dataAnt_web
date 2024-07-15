@@ -3,7 +3,7 @@ import ElearningAboutView from 'src/sections/_elearning/view/elearning-about-vie
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'E-learning: About us',
+  title: 'e-learning: About us',
 };
 
 export default function ElearningAboutPage() {

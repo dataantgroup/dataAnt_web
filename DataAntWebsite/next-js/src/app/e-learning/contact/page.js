@@ -3,7 +3,7 @@ import ElearningContactView from 'src/sections/_elearning/view/elearning-contact
 // ----------------------------------------------------------------------
 
 export const metadata = {
-  title: 'E-learning: Contact us',
+  title: 'e-learning: Contact us',
 };
 
 export default function ElearningContactPage() {

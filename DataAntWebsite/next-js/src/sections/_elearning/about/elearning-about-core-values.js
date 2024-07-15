@@ -10,23 +10,27 @@ import Iconify from 'src/components/iconify';
 
 const CORE_VALUES = [
   {
-    title: 'Customer Satisfaction',
-    description: 'Aenean urna dictum adipiscing nec, cras quisque.',
+    title: 'Innovation',
+    description:
+      'Encourage creativity and the development of cutting-edge solutions. Innovation is the driving force behind technological advancements and your bootcamp aims to foster an environment where students are encouraged to think outside the box and develop novel approaches to solve complex problems.',
     icon: 'carbon:3d-curve-auto-colon',
   },
   {
-    title: 'Transparency',
-    description: 'Aenean urna dictum adipiscing nec, cras quisque.',
+    title: 'Excellence',
+    description:
+      'Strive for the highest standards in education and student performance. Excellence involves rigorous training, a strong commitment to mastering core concepts, and continuous improvement.',
     icon: 'carbon:chat-bot',
   },
   {
-    title: 'Reputation',
-    description: 'Aenean urna dictum adipiscing nec, cras quisque.',
+    title: 'Collaboration',
+    description:
+      'Promote teamwork and the sharing of knowledge. Collaboration is essential in the tech industry, and your bootcamp emphasizes the importance of working together to achieve common goals and advance collective understanding.',
     icon: 'carbon:airport-location',
   },
   {
-    title: 'Cooperation',
-    description: 'Aenean urna dictum adipiscing nec, cras quisque.',
+    title: 'Impact',
+    description:
+      'Aim to create solutions that have a positive impact on society. This core value underscores the importance of using technology and AI to address real-world challenges and make meaningful contributions to various fields.',
     icon: 'carbon:event',
   },
 ];
@@ -55,9 +59,9 @@ export default function ElearningAboutCoreValues() {
           <Typography variant="h2">Core Values</Typography>
 
           <Typography sx={{ color: 'text.secondary', maxWidth: { md: 540 } }}>
-            Etiam ultricies nisi vel augue. Suspendisse potenti. Sed mollis, eros et ultrices
-            tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Phasellus viverra
-            nulla ut metus varius laoreet.
+            By embracing these core values, our bootcamp provides a comprehensive and enriching
+            educational experience that prepares students to become innovative, excellent,
+            collaborative, and impactful leaders in the tech industry.
           </Typography>
         </Stack>
 

@@ -44,9 +44,9 @@ export const paths = {
     about: '/career/about',
     contact: '/career/contact',
   },
-  // E-learning
+  // e-learning
   eLearning: {
-    root: '/e-learning',
+    root: '/e-learning/courses',
     courses: '/e-learning/courses',
     course: `/e-learning/course`,
     posts: '/e-learning/posts',

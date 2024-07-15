@@ -18,7 +18,7 @@ export default function ElearningTeamAbout({ members }) {
           mb: { xs: 8, md: 10 },
         }}
       >
-        Our Teachers
+        Our Team
       </Typography>
 
       <Box

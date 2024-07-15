@@ -68,15 +68,15 @@ function ElearningHeroIllustration({ sx, ...other }) {
       }}
       {...other}
     >
-      {/* <Box sx={{ position: 'absolute', right: 18, bottom: 28, zIndex: 8 }}>
+      <Box sx={{ position: 'absolute', right: 18, bottom: 50, zIndex: 8 }}>
         <Image
           visibleByDefault
           disabledEffect
           alt="teacher"
-          src="/assets/images/course/teacher_fromGPT.png"
-          sx={{ width: 546, height: 650 }}
+          src="/assets/images/home/jetson_orin_nano.png"
+          sx={{ width:'100%' }}
         />
-      </Box> */}
+      </Box>
 
       <Box
         {...varDown}
@@ -163,35 +163,6 @@ function ElearningHeroIllustration({ sx, ...other }) {
           }}
         />
       </Box>
-      
-
-      <Box
-        {...varLeft}
-        component={m.div}
-        sx={{ top: 162, left: 450, zIndex: 8, position: 'absolute' }}
-      >
-        <Label
-          text="TensorFlow"
-          icon={
-            <Image
-              visibleByDefault
-              disabledEffect
-              alt="python"
-              src="/assets/icons/platforms/Tensorflow.png"
-              sx={{ width: 56, height: 56 }}
-            />
-          }
-          sx={{
-            py: 1.75,
-            typography: 'h3',
-            color: '#e65b29',
-            boxShadow: `0px 24px 48px rgba(0, 0, 0, 0.24), inset 0px -4px 10px ${alpha(
-              theme.palette.grey[600],
-              0.48
-            )}`,
-          }}
-        />
-      </Box>
 
       <Box {...varRight} component={m.div} sx={{ zIndex: 8, bottom: 160, position: 'absolute' }}>
         <Label
@@ -217,6 +188,45 @@ function ElearningHeroIllustration({ sx, ...other }) {
           }}
         />
       </Box>
+
+      <Box {...varRight} component={m.div} sx={{ zIndex: 8, top: 160, position: 'absolute' }}>
+        <Label
+          icon={
+            <Image
+              visibleByDefault
+              disabledEffect
+              alt="python"
+              src="/assets/icons/platforms/ros.png"
+              sx={{ width: 180, height: 68 }}
+            />
+          }
+          sx={{
+            transform: 'translateY(-65px) translateX(-5px) scale(0.8) rotate(-5deg)',
+            py: 1.75,
+            typography: 'h3',
+            color: '#ef4b28',
+            boxShadow: `0px 24px 48px rgba(0, 0, 0, 0.24), inset 0px -4px 10px ${alpha(
+              theme.palette.grey[600],
+              0.48
+            )}`,
+          }}
+        />
+      </Box>
+
+      <Box {...varUp} component={m.div} sx={{ zIndex: 8, left: 300, position: 'absolute' }}>
+        <Icon
+          color='#8ec63f'
+          content={<Image
+            visibleByDefault
+            disabledEffect
+            alt="python"
+            src="/assets/icons/platforms/cuda.png"
+            sx={{ width: 56, height: 68 }}
+          />}
+          sx={{ transform: 'scale(1.8) translateY(5px) rotate(10deg)' }}
+        />
+      </Box>
+      
 
       <Box {...varUp} component={m.div} sx={{ zIndex: 8, right: 90, position: 'absolute' }}>
         <Icon

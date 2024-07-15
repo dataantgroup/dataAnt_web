@@ -24,7 +24,7 @@ const LESSONS = [...Array(9)].map((_, index) => ({
 }));
 
 export const _courses = [...Array(12)].map((_, index) => {
-  const languages = ['Russian', 'Spanish', 'English'];
+  const languages = ['Cantonese', 'Mandarin', 'English'];
 
   const skills = _tags.slice(0, 5);
 

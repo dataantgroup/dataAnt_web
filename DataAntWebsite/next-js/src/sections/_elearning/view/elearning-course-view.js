@@ -71,7 +71,7 @@ export default function ElearningCourseView() {
           <Grid xs={12} md={7} lg={8}>
             <ElearningCourseDetailsSummary course={_mockCourse} />
 
-            <Stack direction="row" flexWrap="wrap" sx={{ mt: 5 }}>
+            {/* <Stack direction="row" flexWrap="wrap" sx={{ mt: 5 }}>
               <Typography variant="subtitle2" sx={{ mt: 0.75, mr: 1.5 }}>
                 Share:
               </Typography>
@@ -98,25 +98,25 @@ export default function ElearningCourseView() {
                   </Button>
                 ))}
               </Stack>
-            </Stack>
+            </Stack> */}
 
             <Divider sx={{ my: 5 }} />
 
-            <ElearningCourseDetailsTeachersInfo teachers={_mockCourse.teachers} />
+            {/* <ElearningCourseDetailsTeachersInfo teachers={_mockCourse.teachers} /> */}
           </Grid>
 
           <Grid xs={12} md={5} lg={4}>
             <Stack spacing={5}>
               {mdUp && <ElearningCourseDetailsInfo course={_mockCourse} />}
 
-              <Advertisement
+              {/* <Advertisement
                 advertisement={{
                   title: 'Advertisement',
                   description: 'Duis leo. Donec orci lectus, aliquam ut, faucibus non',
                   imageUrl: _mock.image.course(7),
                   path: '',
                 }}
-              />
+              /> */}
             </Stack>
           </Grid>
         </Grid>
@@ -124,11 +124,11 @@ export default function ElearningCourseView() {
 
       {mdUp && <Divider />}
 
-      <ReviewElearning />
+      {/* <ReviewElearning /> */}
 
-      <ElearningCourseListSimilar courses={courseSimilar} />
+      {/* <ElearningCourseListSimilar courses={courseSimilar} /> */}
 
-      <ElearningNewsletter />
+      {/* <ElearningNewsletter /> */}
     </>
   );
 }

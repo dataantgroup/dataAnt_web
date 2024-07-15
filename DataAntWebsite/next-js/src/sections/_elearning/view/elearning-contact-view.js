@@ -11,9 +11,9 @@ export default function ElearningContactView() {
     <>
       <ElearningContactInfo />
 
-      <ElearningContactForm />
+      {/* <ElearningContactForm /> */}
 
-      <ElearningNewsletter />
+      {/* <ElearningNewsletter /> */}
     </>
   );
 }

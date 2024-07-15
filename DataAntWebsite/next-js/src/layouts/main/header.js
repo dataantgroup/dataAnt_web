@@ -20,7 +20,15 @@ import Logo from 'src/components/logo';
 import Label from 'src/components/label';
 
 import NavMobile from './nav/mobile';
+
 import NavDesktop from './nav/desktop';
+import { NavBasicDesktop } from 'src/components/nav-basic';
+import {
+  NavSectionMini,
+  NavSectionVertical,
+  NavSectionHorizontal,
+} from 'src/components/nav-section';
+
 import { HEADER } from '../config-layout';
 import Searchbar from '../common/searchbar';
 import { navConfig } from './config-navigation';
@@ -70,6 +78,84 @@ export default function Header({ headerOnDark }) {
           }}
         >
           <NavDesktop data={navConfig} />
+          {/* <NavSectionHorizontal
+            slotProps={{
+              rootItem: {
+                '& .icon': { display: 'none' },
+              },
+            }}
+            data={[
+              {
+                subheader: 'Marketing',
+                items: [
+                  // {
+                  //   title: 'Landing',
+                  //   path: '#',
+                  //   // icon: <Iconify icon="carbon:bat" width={1} />,
+                  //   roles: ['admin'],
+                  //   caption: 'Display only admin role',
+                  // },
+                  {
+                    title: 'Home',
+                    path: '/',
+                    // icon: <Iconify icon="carbon:cyclist" width={1} />,
+                    
+                  },
+                  {
+                    title: 'Courses',
+                    path: '/e-learning/courses/',
+                    // icon: <Iconify icon="carbon:3d-cursor-alt" width={1} />,
+                    // info: <Label color="error">+32</Label>,
+                    children: [
+                      { title: 'Case Studies', path: '#' },
+                      { title: 'Case Study', path: '#' },
+                    ],
+                  },
+                  {
+                    title: 'Blog',
+                    path: '#',
+                    // icon: <Iconify icon="carbon:3d-mpr-toggle" width={1} />,
+                    children: [
+                      { title: 'Blog Posts', path: '#' },
+                      { title: 'Blog Post', path: '#' },
+                    ],
+                  },
+                ],
+              },
+              {
+                subheader: 'Travel',
+                items: [
+                  {
+                    title: 'About',
+                    path: '#',
+                    // icon: <Iconify icon="carbon:airport-01" width={1} />,
+                  },
+                  {
+                    title: 'Contact',
+                    path: '#',
+                    // icon: <Iconify icon="carbon:battery-full" width={1} />,
+                  },
+                  {
+                    title: 'Level',
+                    path: '#',
+                    // icon: <Iconify icon="carbon:play" width={1} />,
+                    children: [
+                      { title: 'Level 2.1', path: '#' },
+                      { title: 'Level 2.2', path: '#' },
+                      {
+                        title: 'Level 2.3',
+                        path: '#',
+                        children: [
+                          { title: 'Level 3.1', path: '#' },
+                          { title: 'Level 3.2', path: '#' },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+            ]}
+          /> */}
         </Stack>
 
         <Box sx={{ flexGrow: { xs: 1, md: 'unset' } }} />
