@@ -12,7 +12,9 @@
   "extends": [
     "airbnb",
     "airbnb/hooks",
-    "prettier"
+    "prettier",
+    "next",
+    "next/core-web-vitals"
   ],
   "parserOptions": {
     "ecmaVersion": "latest",
