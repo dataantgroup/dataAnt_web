@@ -78,10 +78,8 @@ export const pageLinks = [
     subheader: 'Introduction Level',
     cover: '/assets/images/course/course_3.jpg',
     items: [
-      { title: 'Machine Learning', path: paths.eLearning.course },
-      { title: 'Reinforcement Learning', path: paths.eLearning.course },
-      { title: 'Deep Learning', path: paths.eLearning.course },
-      { title: 'Generative AI', path: paths.eLearning.course },
+      { title: 'Introduction to Python', path: paths.eLearning.course },
+      { title: 'Introduction to Robotics', path: paths.eLearning.course }
     ],
   },
   {
@@ -107,27 +105,15 @@ export const pageLinks = [
     ],
   },
 
-  // {
-  //   isNew: true,
-  //   order: '3',
-  //   subheader: 'E-commerce',
-  //   cover: '/assets/images/menu/menu_ecommerce.jpg',
-  //   items: [
-  //     { title: 'Landing', path: paths.eCommerce.root },
-  //     { title: 'Products', path: paths.eCommerce.products },
-  //     { title: 'Product', path: paths.eCommerce.product },
-  //     { title: 'Cart', path: paths.eCommerce.cart },
-  //     { title: 'Checkout', path: paths.eCommerce.checkout },
-  //     { title: 'Order Completed', path: paths.eCommerce.orderCompleted },
-  //     { title: 'Wishlist', path: paths.eCommerce.wishlist },
-  //     { title: 'Compare', path: paths.eCommerce.compare },
-  //     { title: 'Account Personal', path: paths.eCommerce.account.personal },
-  //     { title: 'Account Wishlist', path: paths.eCommerce.account.wishlist },
-  //     { title: 'Account Vouchers', path: paths.eCommerce.account.vouchers },
-  //     { title: 'Account Orders', path: paths.eCommerce.account.orders },
-  //     { title: 'Account Payment', path: paths.eCommerce.account.payment },
-  //   ],
-  // },
+  {
+    isNew: true,
+    order: '5',
+    subheader: 'Ongoing Project',
+    cover: '/assets/images/menu/menu_ecommerce.jpg',
+    items: [
+      { title: 'Enbody Quadruped Robot Dog', path: paths.eLearning.course }
+    ],
+  },
   // {
   //   order: '5',
   //   subheader: 'Common',
@@ -156,8 +142,8 @@ export const pageLinks = [
 
 export const navConfig = [
   { title: 'Home', path: '/' },
-  { title: 'Technology transfer', path: paths.eLearning.courses, children: [pageLinks[0],pageLinks[1],pageLinks[2]] },
-  { title: 'Transformative project', path: paths.eLearning.courses, children: [pageLinks[0],pageLinks[1],pageLinks[2]] },
+  { title: 'Technology Transfer', path: paths.eLearning.courses, children: [pageLinks[0],pageLinks[1],pageLinks[2]] },
+  { title: 'Transformative Project', path: paths.eLearning.courses, children: [pageLinks[3]] },
   //   children: [pageLinks[0], pageLinks[1], pageLinks[2], pageLinks[3], pageLinks[4], pageLinks[5]],
   // },
   { title: 'About Us', path: paths.eLearning.about },
