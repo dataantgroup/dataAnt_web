@@ -108,7 +108,7 @@ export const pageLinks = [
   {
     isNew: true,
     order: '5',
-    subheader: 'Ongoing Project',
+    subheader: 'Ongoing Projects',
     cover: '/assets/images/menu/menu_ecommerce.jpg',
     items: [
       { title: 'Enbody Quadruped Robot Dog', path: paths.eLearning.course }
@@ -142,8 +142,8 @@ export const pageLinks = [
 
 export const navConfig = [
   { title: 'Home', path: '/' },
-  { title: 'Technology Transfer', path: paths.eLearning.courses, children: [pageLinks[0],pageLinks[1],pageLinks[2]] },
-  { title: 'Transformative Project', path: paths.eLearning.courses, children: [pageLinks[3]] },
+  { title: 'Technology Transfers', path: paths.eLearning.courses, children: [pageLinks[0],pageLinks[1],pageLinks[2]] },
+  { title: 'Transformative Projects', path: paths.eLearning.courses, children: [pageLinks[3]] },
   //   children: [pageLinks[0], pageLinks[1], pageLinks[2], pageLinks[3], pageLinks[4], pageLinks[5]],
   // },
   { title: 'About Us', path: paths.eLearning.about },
