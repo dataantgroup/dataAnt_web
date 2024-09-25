@@ -89,11 +89,12 @@ export default function NavigationBarView() {
             data={BASIC_NAV_ITEMS}
             slotProps={{
               rootItem: {
-                fontSize: 15,
+                fontSize: 150,
                 fontFamily: (theme) => theme.typography.fontSecondaryFamily,
                 '& .icon': {
-                  /* push your styles */
-                },
+                width: 300, // Increase icon width
+                height: 300, // Increase icon height
+              },
                 '& .text-container': {},
                 '& .label': {},
                 '& .caption': {},
@@ -125,7 +126,7 @@ export default function NavigationBarView() {
           data={BASIC_NAV_ITEMS}
           slotProps={{
             rootItem: {
-              fontSize: 15,
+              fontSize: 150,
               fontFamily: (theme) => theme.typography.fontSecondaryFamily,
               '& .icon': {
                 /* push your styles */

@@ -109,10 +109,14 @@ export const pageLinks = [
     isNew: true,
     order: '5',
     subheader: 'Ongoing Projects',
-    cover: '/assets/images/menu/menu_ecommerce.jpg',
+    cover: '/assets/images/projectDemo/RobotQuadruped.png',
     items: [
-      { title: 'Enbody Quadruped Robot Dog', path: paths.eLearning.course }
+      { title: 'Enbody Quadruped Robot Dog1', path: paths.travel.tours },
+      { title: 'Enbody Quadruped Robot Dog2', path: paths.travel.tour },
+      { title: 'Enbody Quadruped Robot Dog3', path: paths.learning.courses },
+      { title: 'Enbody Quadruped Robot Dog4', path: paths.learning.course }
     ],
+    
   },
   // {
   //   order: '5',
@@ -142,8 +146,8 @@ export const pageLinks = [
 
 export const navConfig = [
   { title: 'Home', path: '/' },
-  { title: 'Technology Transfers', path: paths.eLearning.courses, children: [pageLinks[0],pageLinks[1],pageLinks[2]] },
   { title: 'Transformative Projects', path: paths.eLearning.courses, children: [pageLinks[3]] },
+  { title: 'Technology Transfers', path: paths.eLearning.courses, children: [pageLinks[0],pageLinks[1],pageLinks[2]] },
   //   children: [pageLinks[0], pageLinks[1], pageLinks[2], pageLinks[3], pageLinks[4], pageLinks[5]],
   // },
   { title: 'About Us', path: paths.eLearning.about },
