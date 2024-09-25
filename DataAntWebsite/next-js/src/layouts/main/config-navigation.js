@@ -156,8 +156,8 @@ export const pageLinks = [
 
 export const navConfig = [
   { title: 'Home', path: '/' },
-  { title: 'Courses', path: paths.eLearning.courses, children: [pageLinks[0],pageLinks[1],pageLinks[2]] },
-
+  { title: 'Technology transfer', path: paths.eLearning.courses, children: [pageLinks[0],pageLinks[1],pageLinks[2]] },
+  { title: 'Transformative project', path: paths.eLearning.courses, children: [pageLinks[0],pageLinks[1],pageLinks[2]] },
   //   children: [pageLinks[0], pageLinks[1], pageLinks[2], pageLinks[3], pageLinks[4], pageLinks[5]],
   // },
   { title: 'About Us', path: paths.eLearning.about },
