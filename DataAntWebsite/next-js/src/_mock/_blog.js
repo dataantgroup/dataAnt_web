@@ -100,5 +100,5 @@ export const _coursePosts = [...Array(12)].map((_, index) => ({
   ...base(index),
   content: content('course'),
   coverUrl: _mock.image.course(index),
-  heroUrl: `/assets/images/course/course_post_hero.jpg`,
+  heroUrl: `/assets/images/course/AI_Jetbot_Leaftlet.jpg`,
 }));

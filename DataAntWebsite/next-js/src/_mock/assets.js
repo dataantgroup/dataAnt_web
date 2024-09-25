@@ -5,7 +5,7 @@ export const _id = [...Array(40)].map(
 );
 
 export const _courseTitle = [
-  'Design Masterclass Course',
+  'AI Vehicle JETBOT Masterclass',
   'Fitness For Beginners (2020)',
   'The Secrets To Teaching Online',
   'Learn How To Create A Course Online And Level Up Your Career',
@@ -111,7 +111,7 @@ export const _emails = [
 // ----------------------------------------------------------------------
 
 export const _fullNames = [
-  'Jayvion Simon',
+  'Dr. Wong',
   'Lucian Obrien',
   'Deja Brady',
   'Harrison Stein',
@@ -519,7 +519,7 @@ export const _sentences = [
 // ----------------------------------------------------------------------
 
 export const _descriptions = [
-  `Occaecati est et illo quibusdam accusamus qui. Incidunt aut et molestiae ut facere aut. Est quidem iusto praesentium excepturi harum nihil tenetur facilis. Ut omnis voluptates nihil accusantium doloribus eaque debitis.`,
+  `An exciting course learning robotic basics, AI principle, Python programming through hands-on projects with NVIDIA JetBot. Discover real-world applications and see your own idea come to life`,
   `Atque eaque ducimus minima distinctio velit. Laborum et veniam officiis. Delectus ex saepe hic id laboriosam officia. Odit nostrum qui illum saepe debitis ullam. Laudantium beatae modi fugit ut. Dolores consequatur beatae nihil voluptates rem maiores.`,
   `Rerum eius velit dolores. Explicabo ad nemo quibusdam. Voluptatem eum suscipit et ipsum et consequatur aperiam quia. Rerum nulla sequi recusandae illum velit quia quas. Et error laborum maiores cupiditate occaecati.`,
   `Et non omnis qui. Qui sunt deserunt dolorem aut velit cumque adipisci aut enim. Nihil quis quisquam nesciunt dicta nobis ab aperiam dolorem repellat. Voluptates non blanditiis. Error et tenetur iste soluta cupiditate ratione perspiciatis et. Quibusdam aliquid nam sunt et quisquam non esse.`,

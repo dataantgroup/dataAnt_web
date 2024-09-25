@@ -66,8 +66,8 @@ export default function HomeHero() {
               </Typography>
 
               <Typography sx={{ color: 'text.secondary' }}>
-              DataAnt is an AI BootCamp school offering comprehensive, hands-on AI courses designed to equip you with the skills to excel in the field of artificial intelligence.
-              </Typography>
+              DataAnt is an Innovative AI company focusing on development of emerging AI technology. 
+              We also offer comprehensive AI courses designed to equip you with the skills to excel for industrial and commercial application.              </Typography>
 
               {/* <Button
                 color="inherit"

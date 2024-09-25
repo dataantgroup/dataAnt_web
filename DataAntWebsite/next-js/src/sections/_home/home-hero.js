@@ -23,9 +23,10 @@ import { PlayerDialog } from 'src/components/player';
 // ----------------------------------------------------------------------
 
 const SUMMARY = [
-  { value: 14000, label: 'Learners', color: 'warning' },
+/*  { value: 14000, label: 'Learners', color: 'warning' },
   { value: 1050, label: 'Courses', color: 'error' },
   { value: 59000, label: 'Graduates', color: 'success' },
+*/
 ];
 
 // ----------------------------------------------------------------------
@@ -63,21 +64,20 @@ export default function ElearningLandingHero() {
                   textAlign: { xs: 'center', md: 'unset' },
                 }}
               >
-                <Typography variant="h1">
+                <Typography variant="h2">
                   Empower
                   <Box component="span" sx={{ color: 'text.disabled' }}>
-                    {` Your `}
+                    {` Future `}
                   </Box>
                   <Box component="span" sx={{ color: 'primary.main', textDecoration: 'underline' }}>
-                    {` Future`}
+                    {` Technological Discovery`}
                   </Box>
-                   {' '} with AI Mastery
+                   {' '} emerging AI immersion 
                 </Typography>
 
-                <Typography sx={{ color: 'text.secondary', mt: 3, mb: 5 }}>
-                DataAnt is an AI BootCamp school offering comprehensive, hands-on AI courses 
-                designed to equip you with 
-                the skills to excel in the field of artificial intelligence.
+                <Typography sx={{ color: 'text.secondary', mt: 9, mb: 12 }}>
+                DataAnt is an Innovative AI company focusing on development of emerging AI technology. 
+                We also offer comprehensive AI courses designed to equip you with the skills to excel for industrial and commercial application.
                 </Typography>
 
                 <Stack spacing={3} alignItems="center" direction={{ xs: 'column', md: 'row' }}>

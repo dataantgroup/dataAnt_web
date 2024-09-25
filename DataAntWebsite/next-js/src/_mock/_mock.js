@@ -77,7 +77,7 @@ export const _mock = {
   },
   video: (index) =>
     [
-      `https://www.dropbox.com/s/odzycivuo9cy5rg/video_01.mp4?dl=0`,
+      `https://youtu.be/wGtuEg1xE28`,
       `https://www.dropbox.com/s/7cx04n8rr4w5rbg/video_02.mp4?dl=0`,
     ][index],
 };
