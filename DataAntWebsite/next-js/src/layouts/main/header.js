@@ -48,27 +48,33 @@ export default function Header({ headerOnDark }) {
     <>
       <Box sx={{ lineHeight: 0, position: 'relative' }}>
         <Logo />
-
-        {/* <Link href="https://zone-docs.vercel.app/changelog" target="_blank" rel="noopener">
-          <Label
-            color="info"
-            sx={{
-              ml: 0.5,
-              px: 0.5,
-              top: -14,
-              left: 60,
-              height: 20,
-              fontSize: 11,
-              cursor: 'pointer',
-              position: 'absolute',
-            }}
-          >
-            v2.4.0
-          </Label>
-        </Link> */}
       </Box>
 
-      <>
+      <Stack flexGrow={1} alignItems="center" sx={{ height: 1, display: { xs: 'none', md: 'flex' } }}>
+        <NavDesktop
+          data={navConfig}
+          slotProps={{
+            rootItem: {
+              sx: { fontSize: '1.25rem' }, // Increase text size
+              '& .icon': {
+                width: 30, // Increase icon width
+                height: 30, // Increase icon height
+              },
+            },
+            subItem: {
+              '& .text-container': {
+                fontSize: '1.15rem', // Increase sub-item text size
+              },
+              '& .icon': {
+                width: 30, // Increase sub-item icon size
+                height: 30,
+              },
+            },
+          }}
+        />
+      </Stack>
+
+      {/* <>
         <Stack
           flexGrow={1}
           alignItems="center"
@@ -78,108 +84,20 @@ export default function Header({ headerOnDark }) {
           }}
         >
           <NavDesktop data={navConfig} />
-          {/* <NavSectionHorizontal
-            slotProps={{
-              rootItem: {
-                '& .icon': { display: 'none' },
-              },
-            }}
-            data={[
-              {
-                subheader: 'Marketing',
-                items: [
-                  // {
-                  //   title: 'Landing',
-                  //   path: '#',
-                  //   // icon: <Iconify icon="carbon:bat" width={1} />,
-                  //   roles: ['admin'],
-                  //   caption: 'Display only admin role',
-                  // },
-                  {
-                    title: 'Home',
-                    path: '/',
-                    // icon: <Iconify icon="carbon:cyclist" width={1} />,
-                    
-                  },
-                  {
-                    title: 'Courses',
-                    path: '/e-learning/courses/',
-                    // icon: <Iconify icon="carbon:3d-cursor-alt" width={1} />,
-                    // info: <Label color="error">+32</Label>,
-                    children: [
-                      { title: 'Case Studies', path: '#' },
-                      { title: 'Case Study', path: '#' },
-                    ],
-                  },
-                  {
-                    title: 'Blog',
-                    path: '#',
-                    // icon: <Iconify icon="carbon:3d-mpr-toggle" width={1} />,
-                    children: [
-                      { title: 'Blog Posts', path: '#' },
-                      { title: 'Blog Post', path: '#' },
-                    ],
-                  },
-                ],
-              },
-              {
-                subheader: 'Travel',
-                items: [
-                  {
-                    title: 'About',
-                    path: '#',
-                    // icon: <Iconify icon="carbon:airport-01" width={1} />,
-                  },
-                  {
-                    title: 'Contact',
-                    path: '#',
-                    // icon: <Iconify icon="carbon:battery-full" width={1} />,
-                  },
-                  {
-                    title: 'Level',
-                    path: '#',
-                    // icon: <Iconify icon="carbon:play" width={1} />,
-                    children: [
-                      { title: 'Level 2.1', path: '#' },
-                      { title: 'Level 2.2', path: '#' },
-                      {
-                        title: 'Level 2.3',
-                        path: '#',
-                        children: [
-                          { title: 'Level 3.1', path: '#' },
-                          { title: 'Level 3.2', path: '#' },
-                        ],
-                      },
-                    ],
-                  },
-                ],
-              },
-            ]}
-          /> */}
+          {}
         </Stack>
 
         <Box sx={{ flexGrow: { xs: 1, md: 'unset' } }} />
-      </>
+      </> */}
 
       <Stack spacing={2} direction="row" alignItems="center" justifyContent="flex-end">
         <Stack spacing={1} direction="row" alignItems="center">
-          {/* <Searchbar /> */}
+          {}
 
           <SettingsButton />
         </Stack>
 
-        {/* <Button
-          variant="contained"
-          color="inherit"
-          href={paths.zoneStore}
-          target="_blank"
-          rel="noopener"
-          sx={{
-            display: { xs: 'none', md: 'inline-flex' },
-          }}
-        >
-          Buy Now
-        </Button> */}
+        {}
       </Stack>
 
       {!mdUp && <NavMobile data={navConfig} />}

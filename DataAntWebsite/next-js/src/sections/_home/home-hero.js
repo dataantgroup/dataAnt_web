@@ -75,7 +75,7 @@ export default function ElearningLandingHero() {
                    {' '} emerging AI immersion 
                 </Typography>
 
-                <Typography sx={{ color: 'text.secondary', mt: 9, mb: 12 }}>
+                <Typography sx={{ color: 'text.secondary', mt: 9, mb: 12, fontSize: '1.5rem' }}>
                 DataAnt is an Innovative AI company focusing on development of emerging AI technology. 
                 We also offer comprehensive AI courses designed to equip you with the skills to excel for industrial and commercial application.
                 </Typography>
